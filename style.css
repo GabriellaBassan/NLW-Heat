@@ -97,3 +97,48 @@ ul {
 
   justify-content: center;
 }
+
+@media (min-width: 720px) {
+  body {
+    background: #09090a;
+  }
+
+  main {
+    min-height: 540px;
+    height: 540px;
+    width: 358px;
+    margin-top: 60px;
+    position: relative;
+    -webkit-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.35);
+  }
+
+  .container::before {
+    content: '';
+    background: black;
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    margin-left: -38px;
+    top: 30px;
+  }
+
+  .container::after {
+    content: '';
+    background: linear-gradient(104.3deg, #ff008e 0.48%, #ffcd1e 100%);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 64px;
+    height: 193px;
+    position: absolute;
+    top: -160px;
+    margin-left: -31px;
+  }
+
+  .avatar {
+    margin: 4.5rem auto 0;
+  }
+  ul {
+    margin-top: 2rem;
+  }
+}
